@@ -1,12 +1,11 @@
 <template>
-  <div class="box-body">
+  <div class="box-body" id="scroll">
     <div class="box-item">
       <ul class="task-list">
         <li v-for="(task, index) in tasks" :key="index">
           <Task :tak="task" @delete="deleteTask(index)" @done="doneTask(index)" @edit="editTask(index)" v-if="task.status"/>
-          <Edit :tak="task" @confirm="confirm" @cancel="cancel" v-if="!task.status"/>
+          <Edit :tak="task" @confirm="confirm" @cancel="cancel" v-else-if="!task.status"/>
         </li>
-        <li><Edit/></li>
       </ul>
     </div>
   </div>

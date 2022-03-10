@@ -40,13 +40,13 @@ export default {
     }
   },
   methods:{
-    addTask(value){
-      this.tasks.push({id:this.tasks.length, title:value, completed:false, status: true})
+    async addTask(value){
+      await this.tasks.push({id:this.tasks.length, title:value, completed:false, status: true})
+      let boxItem=document.getElementById("scroll");
+      boxItem.scrollBy(0,document.body.scrollHeight);
     },
     deleteAllTask(){
       this.tasks=[]
-      //let l= this.tasks.length
-      //this.tasks.splice(0,l)
     },
     deleteTaskDone() {
       let i = 0
