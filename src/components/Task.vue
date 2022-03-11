@@ -41,7 +41,7 @@ export default {
 <style>
 
 .task{
-  border: #9ae9f1 solid 2px;
+  border: #40407a solid 2px;
   border-radius: 5px;
   padding: 5px;
   display: flex;
@@ -57,8 +57,9 @@ export default {
 }
 
 .done-completed{
-  background-color: lightgray;
-  border: lightgray;
+  background-color: transparent;
+  border: transparent;
+  color: black;
   border-radius: 50%;
 }
 
@@ -73,8 +74,9 @@ button{
 }
 
 .done{
-  background-color: lightgreen;
-  border: lightgreen;
+  background-color: transparent;
+  border: transparent;
+  color: lightgreen;
   display: none;
   border-radius: 50%;
 }

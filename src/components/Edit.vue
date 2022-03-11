@@ -37,8 +37,8 @@ export default {
 <style scoped>
 
 .edit{
-  background-color: #9ae9f1;
-  border: #9ae9f1 solid 2px;
+  background-color: #706fd3;
+  border: #40407a solid 2px;
   border-radius: 5px;
   padding: 5px;
   display: flex;
@@ -48,7 +48,7 @@ export default {
 
 input{
   width: 100%;
-  background-color: #9ae9f1;
+  background-color: #706fd3;
   border: none;
   outline: none;
 }

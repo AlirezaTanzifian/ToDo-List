@@ -68,7 +68,7 @@ ul{
 }
 
 li{
-  background-color: #283593;
+  background-color: #2c2c54;
   padding: 0.2rem;
   border-radius: 0.5rem;
   color: white;
@@ -76,8 +76,8 @@ li{
 }
 
 button{
-  background-color:  #283593;
-  border:  #283593;
+  background-color:  #2c2c54;
+  border:  #2c2c54;
   color: white;
 }
 

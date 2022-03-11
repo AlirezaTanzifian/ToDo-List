@@ -75,13 +75,13 @@ export default {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #354196;
+  background: #40407a;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #283593;
+  background: #40407a;
 }
 
 ul{

@@ -43,7 +43,7 @@ export default {
   -webkit-box-align: center;
   align-items: center;
   justify-content: center;
-  border: 0.3rem solid #1976d2;
+  border: 0.3rem solid #474787;
   border-radius: 5rem;
   overflow: hidden;
   background-color: #d5faff;
@@ -62,7 +62,7 @@ button{
   width: 2.5rem;
   height: 2.5rem;
   font-weight: bolder;
-  background-color: #1976d2;
+  background-color: #474787;
   color: white;
   justify-content: center;
   white-space: nowrap;
