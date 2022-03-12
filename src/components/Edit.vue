@@ -17,18 +17,24 @@
 <script>
 export default {
   name: "Edit-component",
-  props:["tak"],
+  props:["tak","Index"],
   data(){
     return{
-      nvalue : { id:this.tak.id, title:this.tak.title}
+      ovalue : {id:this.Index, title:this.tak.title},
+      nvalue : {id:this.Index, title:this.tak.title}
     }
   },
   methods:{
     confirm(){
-      this.$emit('confirm', this.nvalue)
+      if(this.nvalue.title != ""){
+        this.$emit('confirm', this.nvalue)
+      }
+      else{
+        alert("Task can not be empty")
+      }
     },
     cancel(){
-      this.$emit('cancel', this.tak)
+      this.$emit('cancel', this.ovalue)
     }
   }
 }

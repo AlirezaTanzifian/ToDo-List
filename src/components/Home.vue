@@ -31,17 +31,17 @@ export default {
   data(){
     return{
       tasks : [
-        { id:0, title : "Learn Persian", completed : false, status : true},
-        { id:1, title : "Learn English", completed : false, status : true},
-        { id:2, title : "Learn Spanish", completed : false, status : true},
-        { id:3, title : "Learn French", completed : false, status : true},
-        { id:4, title : "Learn Chinese", completed : false, status : true}
+        { title : "Learn Persian", completed : false, status : true},
+        { title : "Learn English", completed : false, status : true},
+        { title : "Learn Spanish", completed : false, status : true},
+        { title : "Learn French", completed : false, status : true},
+        { title : "Learn Chinese", completed : false, status : true}
       ]
     }
   },
   methods:{
     async addTask(value){
-      await this.tasks.push({id:this.tasks.length, title:value, completed:false, status: true})
+      await this.tasks.push({title:value, completed:false, status: true})
       let boxItem=document.getElementById("scroll");
       boxItem.scrollBy(0,document.body.scrollHeight);
     },
